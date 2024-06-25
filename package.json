@@ -1,0 +1,22 @@
+{
+  "name": "dogs-and-poems",
+  "version": "1.0.0",
+  "description": "This repo contains code for an JavaScript/ Node.js website that utilizes an Express server and EJS as a view engine to present users with a random photo of a dog, and a random short poem every time they visit.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "src/app.js",
+    "start-dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
