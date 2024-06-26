@@ -1,10 +1,11 @@
-const express = require('express'), 
-app = express(), 
+const express = require('express'),
+app = express(),
 cors = require('cors'),
-port = 3000
+port = 3000;
+const {getDogPoem, fetchDog, fetchPoem} = require("./controllers/controller")
 
-// View engine for Server Side Rendering
-app.set("views", "src/views")
+// View Engine and Views
+app.set("views", "src/views");
 app.set("view engine", "ejs");
 
 // Middleware
@@ -14,12 +15,11 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-
 // Server
+app.get("/", getDogPoem)
 
-app.get("/", (req, res, next)=>{
-    res.status(200).send("Hello World")
-})
+
+
 
 
 
