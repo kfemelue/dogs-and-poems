@@ -4,4 +4,4 @@ nvm use 18.17.0
 
 # Install Dependencies
 npm ci -y
-npm run start-dev
+npm run start
