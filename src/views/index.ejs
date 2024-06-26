@@ -9,12 +9,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>
-        <%= resultObj.title %>
-    </h1>
-    <h3>
-        <%= resultObj.author %>
-    </h3>
-    <img src="<%= resultObj.img %>" height="500px" width="500px" alt="A random photo of a very good dog">
+    <div class="text-center"">
+        <div class="center-block">
+            <h1>
+                <%= resultObj.title %>
+            </h1>
+        </div>
+        <div >
+            <h3>
+                <%= resultObj.author %>
+            </h3>
+        </div>
+        <div >
+            <img src="<%= resultObj.img %>" height="500px" width="500px" alt="A random photo of a very good dog">
+        </div>
+        <div >
+            <% for (var i = 0; i < resultObj.lines.length; i++) { %>
+                <p class="m-0 p-0">
+                    <%= resultObj.lines[i] %>
+                </p>
+            <% } %>
+        </div>
+
+    
+    </div>
+
+    
+    
 </body>
 </html>

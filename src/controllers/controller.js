@@ -29,8 +29,8 @@ async function fetchPoem() {
     await fetch(request)
     .then(response => response.json())
     .then(data => {
-        //filter poems by linecount with a maximum of 25 lines
-        data = data.filter((item)=> Number(item.linecount)<=25)
+        //filter poems by linecount with a maximum of 100 lines
+        data = data.filter((item)=> Number(item.linecount)<=100)
         //select a random poem
         const poem = data[Math.floor(Math.random()*data.length)];
         resultObj.title = poem.title;
