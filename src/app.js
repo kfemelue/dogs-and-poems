@@ -2,6 +2,7 @@ const express = require('express'),
 app = express(),
 cors = require('cors'),
 port = 3000;
+const {getDogPoem, fetchDog, fetchPoem} = require("./controllers/controller")
 
 // View Engine and Views
 app.set("views", "src/views");
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-
+app.get("/", getDogPoem)
 
 
 
