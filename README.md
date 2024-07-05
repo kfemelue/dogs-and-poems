@@ -2,12 +2,12 @@
 
 This repo contains code for an JavaScript/ Node.js website that utilizes an Express server, and EJS view engine to present users with a random photo of a dog, and a random short poem about a dog every time they visit the website.
 
-This application can also be deplayed in a container using Docker.
+This application can also be deployed in a container using Docker.
 
 ## The Purpose
 
 The purpose of this project is simple. I love dogs, I love poetry, and I have a feeling others might too.
-I also wanted to practice designing, building, and deploying, and documenting a Node application that utilizes external APIs within a limited time frame.
+I also wanted to practice designing, building, and deploying, and documenting a Node application that utilizes external APIs and Server Side Rendering within a limited time frame.
 
 ## Instructions for Local Deployment:
 
@@ -44,10 +44,12 @@ I also wanted to practice designing, building, and deploying, and documenting a 
         open http://localhost:3000
     ```
 
-    #### OR
+    ### OR
     - After navigating to dogs-and-poems directory, run the following commands in the terminal:
     ```
         chmod +x start.sh
+    ```
+    ```
         source start.sh
     ```
 
