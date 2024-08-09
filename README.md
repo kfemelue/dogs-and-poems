@@ -12,17 +12,22 @@ I also wanted to practice designing, building, and deploying, and documenting a 
 ## Instructions for Local Deployment:
 
 ### Requirements
+
     Node Version 18.17.0 or Later
     A Web browser of your choice
 
 ### Dependencies
+
     Express
     EJS
     Docker
 
 1. Clone this repo to your machine.
 2. cd into the dogs-and-poems directory
-3. In the terminal, run the following commands in order
+3. There are three different ways to set up and start the application:
+
+    ### METHOD ONE
+
     - Install Node Version Manager in Environment
     ```
         nvm install 18.17.0 -g
@@ -44,7 +49,8 @@ I also wanted to practice designing, building, and deploying, and documenting a 
         open http://localhost:3000
     ```
 
-    ### OR
+    ### METHOD TWO
+
     - After navigating to dogs-and-poems directory, run the following commands in the terminal:
     ```
         chmod +x start.sh
@@ -52,8 +58,9 @@ I also wanted to practice designing, building, and deploying, and documenting a 
     ```
         source start.sh
     ```
+    ### METHOD THREE
 
-4. This application can be deployed locally using Docker (Docker must be installed on your machine):
+    This application can be deployed locally using Docker (Docker must be installed on your machine):
     - To build the image, navigate to the the dogs-and-poems directory and in the terminal run:
         ```
         docker build --tag 'dog-poem-app' .
